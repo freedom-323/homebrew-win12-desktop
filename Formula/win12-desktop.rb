@@ -30,7 +30,7 @@ class Win12Dektop < Formula
       system "pnpm", "install", "--frozen-lockfile"
       system "pnpm", "exec", "tauri", "build", "--bundles", "none", "--target", arch
 
-      bin.install "src-tauri/target/#{arch}/release/Win12"
+      bin.install "Win12"
     elsif OS.linux?
       libexec.install "Win12_0.2.6_amd64.AppImage" => "Win12.AppImage"
 
