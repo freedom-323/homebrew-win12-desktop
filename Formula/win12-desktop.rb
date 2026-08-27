@@ -30,11 +30,11 @@ class Win12Dektop < Formula
       system "pnpm", "install", "--frozen-lockfile"
       system "pnpm", "exec", "tauri", "build", "--bundles", "none", "--target", arch
 
-      bin.install "Win12"
+      bin.install "win12"
     elsif OS.linux?
       libexec.install "Win12_0.2.6_amd64.AppImage" => "Win12.AppImage"
 
-      (bin/"Win12").write <<~EOS
+      (bin/"win12").write <<~EOS
         #!/bin/bash
         exec "#{libexec}/Win12.AppImage" "$@"
       EOS
