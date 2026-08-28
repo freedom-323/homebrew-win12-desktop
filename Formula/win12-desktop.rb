@@ -1,10 +1,10 @@
 class Win12Desktop < Formula
   desc "Win12 桌面端，基于 Tauri 封装，将 Win12 网页版变成独立桌面应用"
-  homepage "https://github.com"
+  homepage "https://github.com/win12-online/win12-desktop"
   license "EPL-2.0"
   
   if OS.mac?
-    url "https://github.com.git",
+    url "https://github.com/win12-online/win12-desktop.git",
         tag:      "v0.2.6",
         revision: "067f3c8304ae4b6799fc929d5ee4385a54e86c44"
     
@@ -12,7 +12,7 @@ class Win12Desktop < Formula
     depends_on "pnpm" => :build
     depends_on "rust" => :build
   elsif OS.linux?
-    url "https://github.com/releases/download/v0.2.6/Win12_0.2.6_amd64.AppImage"
+    url "https://github.com/win12-online/win12-desktop/releases/download/v0.2.6/Win12_0.2.6_amd64.AppImage"
     sha256 "5539858a4f619a39033f9063f7f59e7f943fce047ab449f612d4f7e422b76085"
   end
 
