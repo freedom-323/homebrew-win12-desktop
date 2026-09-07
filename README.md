@@ -3,7 +3,7 @@
 ![Win12 Desktop](https://img.shields.io/badge/Win12-Desktop-0078d4?style=flat-square)
 [![EPL-2.0](https://img.shields.io/badge/license-EPL--2.0-2ea44f?style=flat-square)](./LICENSE)
 
-Win12 Desktop 的 Homebrew 安装仓库。Win12 Desktop 基于 Tauri 封装，将
+Win12 Desktop 的 [Homebrew](https://github.com/homebrew/brew) 安装仓库。Win12 Desktop 基于 Tauri 封装，将
 [Win12 Online](https://github.com/win12-online/win12) 变成可独立运行的桌面应用。
 
 > 本仓库只维护 Homebrew formula，不包含 Win12 Desktop 的应用源码。
