@@ -21,11 +21,4 @@ jobs:
           restore-keys: ${{ runner.os }}-rubygems-
 
       - name: Run brew test-bot
-        run: |
-          if [ "${{ github.event_name }}" = "pull_request" ]; then
-            brew test-bot --only-cleanup-before
-            brew test-bot --only-setup
-            brew test-bot --only-programmatic
-          else
-            brew test-bot --only-formulae --root-url=https://ghcr.io{{ github.repository }}
-          fi
+        uses: Homebrew/actions/brew-test-bot@master
