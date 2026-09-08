@@ -9,7 +9,7 @@ jobs:
   test-bot:
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest]   # test on both platforms; remove if you only need Ubuntu
+        os: [ubuntu-latest, macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout repository
@@ -28,6 +28,7 @@ jobs:
           restore-keys: ${{ runner.os }}-rubygems-
 
       - name: Run brew test-bot
-        uses: Homebrew/actions/brew-test-bot@master
-        with:
-          only-formulae: true
+        run: |
+          brew test-bot --only-formulae --verbose
+        env:
+          HOMEBREW_NO_INSTALL_FROM_API: 1
