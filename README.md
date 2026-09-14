@@ -38,7 +38,8 @@ Formula 会自动使用 Homebrew 安装的 Node.js、pnpm 和 Rust 构建依赖�
 
 ```bash
 brew tap freedom-323/win12-desktop
-brew install win12-desktop
+brew trust --formula freedom-323/win12-desktop/win12-desktop
+brew install freedom-323/win12-desktop/win12-desktop
 ```
 
 安装完成后运行：
