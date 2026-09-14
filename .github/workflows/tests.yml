@@ -28,6 +28,7 @@ jobs:
           restore-keys: ${{ runner.os }}-rubygems-
 
       - name: Fix Homebrew Permissions
+        if: runner.os == 'Linux'
         run: |
           sudo chown -R $(whoami) /home/linuxbrew/.linuxbrew
 
