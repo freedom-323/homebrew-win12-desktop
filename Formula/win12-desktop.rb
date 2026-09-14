@@ -3,6 +3,7 @@ class Win12Desktop < Formula
   homepage "https://github.com/win12-online/win12-desktop"
   license "EPL-2.0"
   version "0.2.7"  # ***
+end
 
   if OS.mac?
     url "https://github.com/win12-online/win12-desktop.git",
