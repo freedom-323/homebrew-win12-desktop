@@ -55,3 +55,4 @@ class Win12Desktop < Formula
     url :homepage
     strategy :github_latest
   end
+end
