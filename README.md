@@ -84,7 +84,7 @@ Win12 Desktop `v0.2.7`。
 1. `version`、源码 tag 或 Linux AppImage 下载地址；
 2. Linux AppImage 的 `sha256`；
 3. macOS 源码构建所需的 revision；
-4. `brew install --build-from-source win12-desktop` 和基础 smoke test。
+4. `brew install --build-from-source freedom-323/win12-desktop/win12-desktop` 和基础 smoke test。
 
 本地检查 formula：
 
