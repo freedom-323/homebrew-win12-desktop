@@ -76,7 +76,7 @@ brew untap freedom-323/win12-desktop
 ## Formula 维护
 
 Formula 位于 [`Formula/win12-desktop.rb`](./Formula/win12-desktop.rb)，当前跟踪
-Win12 Desktop `v0.2.7`。
+Win12 Desktop `v0.3.0`。
 
 更新版本时需要同步检查：
 
