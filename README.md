@@ -20,7 +20,8 @@ Win12 Desktop 的 [Homebrew](https://github.com/homebrew/brew) 安装仓库。Wi
 
 ```bash
 brew tap freedom-323/win12-desktop
-brew install win12-desktop
+brew trust freedom-323/win12-desktop
+brew install freedom-323/win12-desktop/win12-desktop
 ```
 
 安装完成后，在终端运行：
@@ -38,7 +39,7 @@ Formula 会自动使用 Homebrew 安装的 Node.js、pnpm 和 Rust 构建依赖�
 
 ```bash
 brew tap freedom-323/win12-desktop
-brew trust --formula freedom-323/win12-desktop/win12-desktop
+brew trust freedom-323/win12-desktop
 brew install freedom-323/win12-desktop/win12-desktop
 ```
 
@@ -61,13 +62,14 @@ win12
 
 ```bash
 brew update
-brew upgrade win12-desktop
+brew livecheck freedom-323/win12-desktop/win12-desktop
+brew upgrade freedom-323/win12-desktop/win12-desktop
 ```
 
 卸载：
 
 ```bash
-brew uninstall win12-desktop
+brew uninstall freedom-323/win12-desktop/win12-desktop
 brew untap freedom-323/win12-desktop
 ```
 
@@ -88,6 +90,7 @@ Win12 Desktop `v0.2.7`。
 ```bash
 brew audit --formula Formula/win12-desktop.rb
 brew style Formula/win12-desktop.rb
+brew test-bot freedom-323/win12-desktop/win12-desktop
 ```
 
 ## 免责声明
