@@ -70,6 +70,7 @@ brew upgrade freedom-323/win12-desktop/win12-desktop
 
 ```bash
 brew uninstall freedom-323/win12-desktop/win12-desktop
+brew untrust freedom-323/win12-desktop
 brew untap freedom-323/win12-desktop
 ```
 
@@ -88,8 +89,8 @@ Win12 Desktop `v0.2.7`。
 本地检查 formula：
 
 ```bash
-brew audit --formula Formula/win12-desktop.rb
-brew style Formula/win12-desktop.rb
+brew audit freedom-323/win12-desktop/win12-desktop
+brew style freedom-323/win12-desktop/win12-desktop
 brew test-bot freedom-323/win12-desktop/win12-desktop
 ```
 
