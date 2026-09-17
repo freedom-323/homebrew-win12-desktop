@@ -49,6 +49,7 @@ class Win12Desktop < Formula
 
   test do
     assert_predicate bin/"win12", :exist?
+    assert_predicate bin/"win12", :executable?
   end
 
   livecheck do
