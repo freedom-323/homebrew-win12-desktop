@@ -27,10 +27,12 @@ jobs:
           key: ${{ runner.os }}-rubygems-${{ steps.set-up-homebrew.outputs.gems-hash }}
           restore-keys: ${{ runner.os }}-rubygems-
 
-      - name: Fix Homebrew Permissions
+      - name: Fix Homebrew permissions
         if: runner.os == 'Linux'
         run: |
-          sudo chown -R $(whoami) /home/linuxbrew/.linuxbrew
+          export HOMEBREW_PREFIX="/home/linuxbrew/.linuxbrew"
+          sudo chown -R "$USER":"$(id -gn)" "$HOMEBREW_PREFIX"
+          sudo chmod -R u+rwX "$HOMEBREW_PREFIX"
 
       - name: Run brew test-bot
         run: |
