@@ -1,20 +1,20 @@
 class Win12Desktop < Formula
   desc "Win12 Desktop"
   homepage "https://github.com/win12-online/win12-desktop"
-  version "0.3.2"  # ***
+  version "0.3.3"  # ***
   license "EPL-2.0"
 
   if OS.mac?
     url "https://github.com/win12-online/win12-desktop.git",
         tag:      "v#{version}",
-        revision: "bd6b8ef97afecf7d3f066f8b468ab354b807f69b"  # ***
+        revision: "ce79e03e27f609f6f56059facb0fe5f1ff7821aa"  # ***
 
     depends_on "node" => :build
     depends_on "pnpm" => :build
     depends_on "rust" => :build
   elsif OS.linux?
     url "https://github.com/win12-online/win12-desktop/releases/download/v#{version}/Win12_#{version}_amd64.AppImage"
-    sha256 "7718a3209c8918389193daa678acc795581d9a4cebbde2307af88e15e45d36ea"  # ***
+    sha256 "596c1095381a3cace777b956f1061f0dc6335bc5dd6df33673753c29c622b5c7"  # ***
   end
 
   def install
